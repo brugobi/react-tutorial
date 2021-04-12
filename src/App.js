@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
@@ -19,11 +18,15 @@ import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
+import PureComp from './components/PureComp';
+import ParenttoUsePureComponentEx from './components/ParenttoUsePureComponentEx';
 
 function App() {
   return (
     <div className="App">
-      <Table />
+      <ParenttoUsePureComponentEx />
+      {/* <PureComp /> */}
+      {/* <Table /> */}
       {/* <FragmentDemo /> */}
       {/* <LifecycleA /> */}
       {/* <Form /> */}
