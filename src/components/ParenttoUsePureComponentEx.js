@@ -1,4 +1,5 @@
 import React, { Component, PureComponent } from 'react'
+import MemoComp from './MemoComp'
 import PureComp from './PureComp'
 import RegComp from './RegComp'
 
@@ -16,7 +17,7 @@ class ParenttoUsePureComponentEx extends Component {
       this.setState({
         name: 'Bruna'
       })
-    }, 20000)
+    }, 2000)
   }
 
   render() {
@@ -24,8 +25,9 @@ class ParenttoUsePureComponentEx extends Component {
     return (
       <div>
         Parent Component to use in Pure Component example
-        <RegComp name={this.state.name} />
-        <PureComp name={this.state.name} />
+        <MemoComp name={this.state.name} />
+        {/* <RegComp name={this.state.name} /> */}
+        {/* <PureComp name={this.state.name} /> */}
       </div>
     )
   }
