@@ -20,11 +20,13 @@ import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import PureComp from './components/PureComp';
 import ParenttoUsePureComponentEx from './components/ParenttoUsePureComponentEx';
+import RefsDemo from './components/RefsDemo';
 
 function App() {
   return (
     <div className="App">
-      <ParenttoUsePureComponentEx />
+      <RefsDemo />
+      {/* <ParenttoUsePureComponentEx /> */}
       {/* <PureComp /> */}
       {/* <Table /> */}
       {/* <FragmentDemo /> */}
